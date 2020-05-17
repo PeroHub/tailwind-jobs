@@ -4,7 +4,7 @@ subtitle: 'Help us design and build more awesome UI tools for developers.'
 jobType: 'Full-time'
 location: ['Remote', 'North America']
 salary: ['$115,000 – $135,000 USD', '$160,000 – $195,000 CAD']
-closes: '2020-05-27T21:00:00.0-05:00'
+closes: '2020-05-27T21:00:00.0'
 applyUrl: 'https://apply.workable.com/tailwind-ui/j/E129989EC6/apply/'
 ---
 

@@ -90,14 +90,12 @@ We're a Canadian company, so the position is permanent/full-time in spirit but a
 
 ## How to apply
 
-To apply, put something together specifically for this position that tells us why we're a great fit for each other, and what you see the future being like if we work together. Tell us what you're excited about in the industry these days, and what you're betting on for the future. Is there a project or feature you'd love for us to build together? Tell us about that too!
+To apply, write something specifically for this position that tells us why we're a great fit for each other, and what you see the future being like if we work together. Tell us what you're excited about in the industry these days, and what you're betting on for the future. Is there a project or feature you'd love for us to build together? Tell us about that too!
 
-It can be in whatever format you like — a piece of writing, a website, a slide deck, however you think you can best paint your picture. It doesn't have to be long, it just needs to tell us what you want us to hear.
-
-We don't ask for your resume but that doesn't mean we're not interested in what you've worked on in the past, we're just leaving it up to you to tell your story the way you want to tell it.
+We don't ask for your resume but that doesn't mean we're not interested in what you've worked on in the past, we're just leaving it up to you to tell your own story the way you want to tell it.
 
 Give us a link to whatever you put together in the "Your application" field when applying.
 
-We're accepting applications until May 27, 2020 at 10pm EST, so take your time putting together an application you are happy with. We're planning to start interviews early June, and aiming for a start date of mid July.
+We're accepting applications until May 27, 2020 at 10pm EST. There are no bonuses or penalties for submitting early or close to the deadline, so submit your application whenever works best for your own schedule. We're planning to start interviews early June, and aiming for a start date of mid July.
 
 Can't wait to hear from you!

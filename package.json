@@ -12,7 +12,7 @@
     "autoprefixer": "^9.7.6",
     "date-fns": "^2.13.0",
     "front-matter": "^3.2.1",
-    "heroicons": "refactoringui/heroicons#master",
+    "heroicons": "^0.2.0",
     "marked": "^1.0.0",
     "next": "9.4.0",
     "next-svgr": "^0.0.2",

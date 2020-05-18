@@ -94,6 +94,8 @@ To apply, write something specifically for this position that tells us why we're
 
 We don't ask for your resume but that doesn't mean we're not interested in what you've worked on in the past, we're just leaving it up to you to tell your own story the way you want to tell it.
 
+We understand that not everyone has the same amount of time to dedicate to their application _(I work from home with a two year old!)_, so don't feel like you need to spend 10 hours on it to stand out. As long as you sound like someone who could be a great fit when we're actually working together day-to-day with the same time constraints, we really want to meet you.
+
 Give us a link to whatever you put together in the "Your application" field when applying.
 
 We're accepting applications until May 27, 2020 at 10pm EST. There are no bonuses or penalties for submitting early or close to the deadline, so submit your application whenever works best for your own schedule. We're planning to start interviews early June, and aiming for a start date of mid July.

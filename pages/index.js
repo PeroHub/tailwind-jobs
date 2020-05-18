@@ -4,11 +4,11 @@ import { allJobs } from '@/lib/job-queries'
 import { format } from 'date-fns'
 import Head from 'next/head'
 import Link from 'next/link'
-import ClosingDateIcon from 'heroicons/solid/calendar.svg'
-import EmploymentIcon from 'heroicons/solid/briefcase.svg'
-import LocationIcon from 'heroicons/solid/location-marker.svg'
-import SalaryIcon from 'heroicons/solid/currency-dollar.svg'
-import NextIcon from 'heroicons/solid/chevron-right.svg'
+import CalendarIcon from 'heroicons/solid/calendar.svg'
+import BriefcaseIcon from 'heroicons/solid/briefcase.svg'
+import LocationMarkerIcon from 'heroicons/solid/location-marker.svg'
+import CurrencyDollarIcon from 'heroicons/solid/currency-dollar.svg'
+import ChevronRightIcon from 'heroicons/solid/chevron-right.svg'
 
 export async function getStaticProps() {
   return {
@@ -31,28 +31,28 @@ function JobCard({ job: { metadata } }) {
             <div>
               <dt className="sr-only">Employment type</dt>
               <dl className="flex items-start space-x-2 text-sm leading-5">
-                <EmploymentIcon className="h-5 w-5 text-gray-400" />
+                <BriefcaseIcon className="h-5 w-5 text-gray-400" />
                 <span className="text-gray-600">{metadata.jobType}</span>
               </dl>
             </div>
             <div>
               <dt className="sr-only">Location</dt>
               <dl className="flex items-start space-x-2 text-sm leading-5">
-                <LocationIcon className="h-5 w-5 text-gray-400" />
+                <LocationMarkerIcon className="h-5 w-5 text-gray-400" />
                 <span className="text-gray-600">{metadata.location[0]}</span>
               </dl>
             </div>
             <div>
               <dt className="sr-only">Salary</dt>
               <dl className="flex items-start space-x-2 text-sm leading-5">
-                <SalaryIcon className="h-5 w-5 text-gray-400" />
+                <CurrencyDollarIcon className="h-5 w-5 text-gray-400" />
                 <span className="text-gray-600">{metadata.salary[0]}</span>
               </dl>
             </div>
             <div>
               <dt className="sr-only">Closing date</dt>
               <dl className="flex items-start space-x-2 text-sm leading-5">
-                <ClosingDateIcon className="h-5 w-5 text-gray-400" />
+                <CalendarIcon className="h-5 w-5 text-gray-400" />
                 <span className="text-gray-600">
                   <span aria-hidden>Closes on</span>{' '}
                   <time dateTime={metadata.closes}>
@@ -64,7 +64,7 @@ function JobCard({ job: { metadata } }) {
           </dl>
         </div>
         <div className="hidden md:block">
-          <NextIcon className="h-6 w-6 text-gray-400" />
+          <ChevronRightIcon className="h-6 w-6 text-gray-400" />
         </div>
       </div>
     </div>

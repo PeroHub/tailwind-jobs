@@ -2,10 +2,10 @@ import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Header from '@/components/Header'
 import { format } from 'date-fns'
-import ClosingDateIcon from 'heroicons/solid/calendar.svg'
-import EmploymentIcon from 'heroicons/solid/briefcase.svg'
-import LocationIcon from 'heroicons/solid/location-marker.svg'
-import SalaryIcon from 'heroicons/solid/currency-dollar.svg'
+import CalendarIcon from 'heroicons/solid/calendar.svg'
+import BreifcaseIcon from 'heroicons/solid/briefcase.svg'
+import LocationMarkerIcon from 'heroicons/solid/location-marker.svg'
+import CurrencyDollarIcon from 'heroicons/solid/currency-dollar.svg'
 
 export default function JobPosting({ children, job: { metadata, body } }) {
   return (
@@ -37,14 +37,14 @@ export default function JobPosting({ children, job: { metadata, body } }) {
                   <div className="py-4">
                     <dt className="sr-only">Employment type</dt>
                     <dl className="flex items-start space-x-2 text-sm leading-5">
-                      <EmploymentIcon className="h-5 w-5 text-gray-400" />
+                      <BreifcaseIcon className="h-5 w-5 text-gray-400" />
                       <span className="text-gray-800">{metadata.jobType}</span>
                     </dl>
                   </div>
                   <div className="py-4">
                     <dt className="sr-only">Location</dt>
                     <dl className="flex items-start space-x-2 text-sm leading-5">
-                      <LocationIcon className="h-5 w-5 text-gray-400" />
+                      <LocationMarkerIcon className="h-5 w-5 text-gray-400" />
                       <div>
                         <div className="text-gray-800">{metadata.location[0]}</div>
                         {metadata.location[1] && (
@@ -56,7 +56,7 @@ export default function JobPosting({ children, job: { metadata, body } }) {
                   <div className="py-4">
                     <dt className="sr-only">Salary</dt>
                     <dl className="flex items-start space-x-2 text-sm leading-5">
-                      <SalaryIcon className="h-5 w-5 text-gray-400" />
+                      <CurrencyDollarIcon className="h-5 w-5 text-gray-400" />
                       <div style={{ fontVariantNumeric: 'tabular-nums' }}>
                         <div className="text-gray-800">{metadata.salary[0]}</div>
                         <div className="text-gray-500">{metadata.salary[1]}</div>
@@ -66,7 +66,7 @@ export default function JobPosting({ children, job: { metadata, body } }) {
                   <div className="py-4">
                     <dt className="sr-only">Closing date</dt>
                     <dl className="flex items-start space-x-2 text-sm leading-5">
-                      <ClosingDateIcon className="h-5 w-5 text-gray-400" />
+                      <CalendarIcon className="h-5 w-5 text-gray-400" />
                       <span className="text-gray-800">
                         <span aria-hidden>Closes on</span>{' '}
                         <time dateTime={metadata.closes}>
@@ -101,14 +101,14 @@ export default function JobPosting({ children, job: { metadata, body } }) {
                     <div className="py-4 border-b border-gray-100">
                       <dt className="sr-only">Employment type</dt>
                       <dl className="flex items-start space-x-2 text-sm leading-5">
-                        <EmploymentIcon className="h-5 w-5 text-gray-400" />
+                        <BreifcaseIcon className="h-5 w-5 text-gray-400" />
                         <span className="text-gray-800">{metadata.jobType}</span>
                       </dl>
                     </div>
                     <div className="py-4 border-b border-gray-100">
                       <dt className="sr-only">Closing date</dt>
                       <dl className="flex items-start space-x-2 text-sm leading-5">
-                        <ClosingDateIcon className="h-5 w-5 text-gray-400" />
+                        <CalendarIcon className="h-5 w-5 text-gray-400" />
                         <span className="text-gray-800">
                           <span aria-hidden>Closes on</span>{' '}
                           <time dateTime={metadata.closes}>
@@ -120,7 +120,7 @@ export default function JobPosting({ children, job: { metadata, body } }) {
                     <div className="py-4 border-b border-gray-100">
                       <dt className="sr-only">Location</dt>
                       <dl className="flex items-start space-x-2 text-sm leading-5">
-                        <LocationIcon className="h-5 w-5 text-gray-400" />
+                        <LocationMarkerIcon className="h-5 w-5 text-gray-400" />
                         <div>
                           <div className="text-gray-800">{metadata.location[0]}</div>
                           {metadata.location[1] && (
@@ -132,7 +132,7 @@ export default function JobPosting({ children, job: { metadata, body } }) {
                     <div className="py-4 border-b border-gray-100">
                       <dt className="sr-only">Salary</dt>
                       <dl className="flex items-start space-x-2 text-sm leading-5">
-                        <SalaryIcon className="h-5 w-5 text-gray-400" />
+                        <CurrencyDollarIcon className="h-5 w-5 text-gray-400" />
                         <div style={{ fontVariantNumeric: 'tabular-nums' }}>
                           <div className="text-gray-800">{metadata.salary[0]}</div>
                           {metadata.salary[1] && (

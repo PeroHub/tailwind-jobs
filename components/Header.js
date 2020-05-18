@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import HeadquartersIcon from 'heroicons/solid/office-building.svg'
-import SizeIcon from 'heroicons/solid/user-group.svg'
+import OfficeBuildingIcon from 'heroicons/solid/office-building.svg'
+import UserGroupIcon from 'heroicons/solid/user-group.svg'
 
 export default function Header() {
   return (
@@ -14,7 +14,7 @@ export default function Header() {
         <div>
           <dt className="sr-only">Company headquarters</dt>
           <dl className="flex items-center space-x-2 text-sm leading-5">
-            <HeadquartersIcon className="h-5 w-5 text-gray-400" />
+            <OfficeBuildingIcon className="h-5 w-5 text-gray-400" />
             <span className="text-gray-600">
               Kitchener, ON<span className="hidden sm:inline">, Canada</span>
             </span>
@@ -23,7 +23,7 @@ export default function Header() {
         <div>
           <dt className="sr-only">Company size</dt>
           <dl className="flex items-center space-x-2 text-sm leading-5">
-            <SizeIcon className="h-5 w-5 text-gray-400" />
+            <UserGroupIcon className="h-5 w-5 text-gray-400" />
             <span className="text-gray-600">3 people</span>
           </dl>
         </div>

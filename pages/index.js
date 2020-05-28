@@ -54,7 +54,7 @@ function JobCard({ job: { metadata } }) {
               <dl className="flex items-start space-x-2 text-sm leading-5">
                 <CalendarIcon className="h-5 w-5 text-gray-400" />
                 <span className="text-gray-600">
-                  <span aria-hidden>Closes on</span>{' '}
+                  <span aria-hidden>Closed on</span>{' '}
                   <time dateTime={metadata.closes}>
                     {format(new Date(metadata.closes), 'MMM d, y')}
                   </time>
@@ -100,22 +100,25 @@ export default function JobPosting({ jobs }) {
       </div>
       <div className="bg-gray-50">
         <main className="max-w-6xl mx-auto px-6">
-          <div className="py-8 space-y-10">
+          <div className="py-8 space-y-6">
             <h1 className="text-3xl leading-9 font-bold text-gray-900">Job Postings</h1>
-            <div>
-              <ul className="space-y-4">
-                {jobs.map((job) => {
-                  return (
-                    <li key={job.path}>
-                      <Link href="/[job]" as={`/${job.path}`}>
-                        <a>
-                          <JobCard job={job} />
-                        </a>
-                      </Link>
-                    </li>
-                  )
-                })}
-              </ul>
+            <div className="space-y-4">
+              <h2 className="text-lg leading-6 font-semibold text-gray-900">Closed</h2>
+              <div>
+                <ul className="space-y-4">
+                  {jobs.map((job) => {
+                    return (
+                      <li key={job.path}>
+                        <Link href="/[job]" as={`/${job.path}`}>
+                          <a>
+                            <JobCard job={job} />
+                          </a>
+                        </Link>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
             </div>
           </div>
         </main>

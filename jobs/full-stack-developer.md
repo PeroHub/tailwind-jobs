@@ -8,6 +8,10 @@ closes: '2020-05-27T21:00:00.0'
 applyUrl: 'https://apply.workable.com/tailwind-ui/j/E129989EC6/apply/'
 ---
 
+<p class="text-gray-900">
+  <strong>This job posting is now closed, but we've left it online for anyone who'd like to reference it. Thanks to all who applied!</strong>
+</p>
+
 We're the tiny team behind open-source projects like [Tailwind CSS](https://tailwindcss.com), commercial products like [Tailwind UI](https://tailwindui.com), and the book [Refactoring UI](https://refactoringui.com/book). We're hiring another programmer to help us build more awesome UI tools for developers.
 
 ## About the job

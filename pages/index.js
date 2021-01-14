@@ -24,7 +24,7 @@ function JobCard({ job: { metadata } }) {
       <div className="flex justify-between items-center rounded-lg px-6 py-4 shadow-xs bg-white">
         <div className="space-y-6">
           <div className="space-y-1">
-            <h3 className="text-lg leading-7 font-semibold text-teal-600">{metadata.title}</h3>
+            <h3 className="text-lg leading-7 font-semibold text-teal-700">{metadata.title}</h3>
             <p className="text-gray-500">{metadata.subtitle}</p>
           </div>
           <dl className="space-y-4 md:flex md:space-y-0 md:space-x-6">
@@ -54,7 +54,7 @@ function JobCard({ job: { metadata } }) {
               <dl className="flex items-start space-x-2 text-sm leading-5">
                 <CalendarIcon className="h-5 w-5 text-gray-400" />
                 <span className="text-gray-600">
-                  <span aria-hidden>Closed on</span>{' '}
+                  <span aria-hidden>{metadata.status === 'open' ? 'Closes' : 'Closed'} on</span>{' '}
                   <time dateTime={metadata.closes}>
                     {format(new Date(metadata.closes), 'MMM d, y')}
                   </time>
@@ -72,6 +72,9 @@ function JobCard({ job: { metadata } }) {
 }
 
 export default function JobPosting({ jobs }) {
+  const openJobs = jobs.filter((j) => j.metadata.status === 'open')
+  const closedJobs = jobs.filter((j) => j.metadata.status === 'closed')
+
   return (
     <Layout>
       <Head>
@@ -100,13 +103,31 @@ export default function JobPosting({ jobs }) {
       </div>
       <div className="bg-gray-50">
         <main className="max-w-6xl mx-auto px-6">
-          <div className="py-8 space-y-6">
+          <div className="py-8 space-y-8">
             <h1 className="text-3xl leading-9 font-bold text-gray-900">Job Postings</h1>
+            <div className="space-y-4">
+              <h2 className="text-lg leading-6 font-semibold text-gray-900">Open</h2>
+              <div>
+                <ul className="space-y-4">
+                  {openJobs.map((job) => {
+                    return (
+                      <li key={job.path}>
+                        <Link href="/[job]" as={`/${job.path}`}>
+                          <a>
+                            <JobCard job={job} />
+                          </a>
+                        </Link>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
+            </div>
             <div className="space-y-4">
               <h2 className="text-lg leading-6 font-semibold text-gray-900">Closed</h2>
               <div>
                 <ul className="space-y-4">
-                  {jobs.map((job) => {
+                  {closedJobs.map((job) => {
                     return (
                       <li key={job.path}>
                         <Link href="/[job]" as={`/${job.path}`}>

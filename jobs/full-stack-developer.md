@@ -5,6 +5,7 @@ jobType: 'Full-time'
 location: ['Remote', 'North America']
 salary: ['$115,000 – $135,000 USD', '$160,000 – $195,000 CAD']
 closes: '2020-05-27T21:00:00.0'
+status: closed
 applyUrl: 'https://apply.workable.com/tailwind-ui/j/E129989EC6/apply/'
 ---
 

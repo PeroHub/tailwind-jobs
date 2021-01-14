@@ -7,7 +7,7 @@ export default function Header() {
     <header className="space-y-4">
       <Link href="/">
         <a className="block">
-          <img className="h-6 w-auto" src="/img/tailwind-ui-logo.svg" alt="Tailwind UI" />
+          <img className="h-6 w-auto" src="/img/tailwind-labs-logo.svg" alt="Tailwind UI" />
         </a>
       </Link>
       <dl className="flex space-x-6">
@@ -24,7 +24,7 @@ export default function Header() {
           <dt className="sr-only">Company size</dt>
           <dl className="flex items-center space-x-2 text-sm leading-5">
             <UserGroupIcon className="h-5 w-5 text-gray-400" />
-            <span className="text-gray-600">3 people</span>
+            <span className="text-gray-600">6 people</span>
           </dl>
         </div>
       </dl>

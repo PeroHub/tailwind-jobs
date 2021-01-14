@@ -68,7 +68,9 @@ export default function JobPosting({ children, job: { metadata, body } }) {
                     <dl className="flex items-start space-x-2 text-sm leading-5">
                       <CalendarIcon className="h-5 w-5 text-gray-400" />
                       <span className="text-gray-800">
-                        <span aria-hidden>Closed on</span>{' '}
+                        <span aria-hidden>
+                          {metadata.status === 'open' ? 'Closes' : 'Closed'} on
+                        </span>{' '}
                         <time dateTime={metadata.closes}>
                           {format(new Date(metadata.closes), 'MMM d, y')}
                         </time>
@@ -77,9 +79,18 @@ export default function JobPosting({ children, job: { metadata, body } }) {
                   </div>
                 </dl>
                 <div className="py-4">
-                  <span className="opacity-50 cursor-not-allowed inline-block rounded-md bg-gray-900 px-4 py-2.5 text-base leading-6 font-semibold text-white">
-                    Apply for this job
-                  </span>
+                  {metadata.status === 'open' ? (
+                    <a
+                      href={metadata.applyUrl}
+                      className="inline-block rounded-md bg-gray-900 px-4 py-2.5 text-base leading-6 font-semibold text-white"
+                    >
+                      Apply for this job
+                    </a>
+                  ) : (
+                    <span className="opacity-50 cursor-not-allowed inline-block rounded-md bg-gray-900 px-4 py-2.5 text-base leading-6 font-semibold text-white">
+                      Apply for this job
+                    </span>
+                  )}
                 </div>
               </div>
             </aside>
@@ -107,7 +118,9 @@ export default function JobPosting({ children, job: { metadata, body } }) {
                       <dl className="flex items-start space-x-2 text-sm leading-5">
                         <CalendarIcon className="h-5 w-5 text-gray-400" />
                         <span className="text-gray-800">
-                          <span aria-hidden>Closes on</span>{' '}
+                          <span aria-hidden>
+                            {metadata.status === 'open' ? 'Closes' : 'Closed'} on
+                          </span>{' '}
                           <time dateTime={metadata.closes}>
                             {format(new Date(metadata.closes), 'MMM d, y')}
                           </time>
@@ -144,9 +157,18 @@ export default function JobPosting({ children, job: { metadata, body } }) {
             </div>
             <div className="prose" dangerouslySetInnerHTML={{ __html: body }} />
             <div>
-              <span className="opacity-50 cursor-not-allowed inline-block rounded-md bg-gray-900 px-4 py-2.5 text-base leading-6 font-semibold text-white">
-                Apply for this job
-              </span>
+              {metadata.status === 'open' ? (
+                <a
+                  href={metadata.applyUrl}
+                  className="inline-block rounded-md bg-gray-900 px-4 py-2.5 text-base leading-6 font-semibold text-white"
+                >
+                  Apply for this job
+                </a>
+              ) : (
+                <span className="opacity-50 cursor-not-allowed inline-block rounded-md bg-gray-900 px-4 py-2.5 text-base leading-6 font-semibold text-white">
+                  Apply for this job
+                </span>
+              )}
             </div>
           </div>
         </article>

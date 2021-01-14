@@ -30,7 +30,7 @@ export default function Header() {
       </dl>
       <div className="max-w-xl text-sm leading-5 text-gray-500">
         <p>
-          Tailwind UI is a small team of developers and designers building tools to help other
+          Tailwind Labs is a small team of developers and designers building tools to help other
           developers build better user interfaces.
         </p>
       </div>

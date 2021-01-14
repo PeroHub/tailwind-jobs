@@ -80,7 +80,7 @@ export default function JobPosting({ jobs }) {
       <Head>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@tailwindcss" />
-        <meta name="twitter:title" content="Tailwind Jobs" />
+        <meta name="twitter:title" content="Tailwind Labs Jobs" />
         <meta
           name="twitter:description"
           content="Help us build the future of Tailwind CSS and Tailwind UI."
@@ -89,13 +89,13 @@ export default function JobPosting({ jobs }) {
         <meta name="twitter:creator" content="@tailwindcss" />
         <meta property="og:url" content="https://jobs.tailwindui.com/" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Tailwind Jobs" />
+        <meta property="og:title" content="Tailwind Labs Jobs" />
         <meta
           property="og:description"
           content="Help us build the future of Tailwind CSS and Tailwind UI."
         />
         <meta property="og:image" content="https://jobs.tailwindui.com/social.png" />
-        <title>Tailwind Jobs</title>
+        <title>Tailwind Labs Jobs</title>
       </Head>
 
       <div className="max-w-6xl mx-auto px-6 py-8">

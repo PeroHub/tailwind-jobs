@@ -13,16 +13,16 @@ export default function JobPosting({ children, job: { metadata, body } }) {
       <Head>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@tailwindcss" />
-        <meta name="twitter:title" content={`${metadata.title} – Tailwind Jobs`} />
+        <meta name="twitter:title" content={`${metadata.title} – Tailwind Labs Jobs`} />
         <meta name="twitter:description" content={metadata.subtitle} />
         <meta name="twitter:image" content="https://jobs.tailwindui.com/social.png" />
         <meta name="twitter:creator" content="@tailwindcss" />
         <meta property="og:url" content="https://jobs.tailwindui.com/" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content={`${metadata.title} – Tailwind Jobs`} />
+        <meta property="og:title" content={`${metadata.title} – Tailwind Labs Jobs`} />
         <meta property="og:description" content={metadata.subtitle} />
         <meta property="og:image" content="https://jobs.tailwindui.com/social.png" />
-        <title>{metadata.title} - Tailwind Jobs</title>
+        <title>{metadata.title} - Tailwind Labs Jobs</title>
       </Head>
 
       <div className="max-w-2xl lg:max-w-6xl mx-auto px-6 py-8">

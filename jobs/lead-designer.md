@@ -76,7 +76,7 @@ We're a Canadian company, so the position is permanent/full-time in spirit but a
 
 ## How to apply
 
-To apply, write something specifically for this position that tells us why we're a great fit for each other, and what you see the future being like if we work together. Include 2–3 projects you've worked on recently and tell us what you think we should know about them. If you've got anything you designed, developed, and shipped entirely by yourself, we'd really love to see it and hear the story.
+To apply, write something specifically for this position that tells us why we're a great fit for each other, and what you see the future being like if we work together. Please showcase 2–3 projects you've worked on recently and tell us what you think we should know about them. If you've got anything you designed, developed, and shipped entirely by yourself, we'd really love to see it and hear the story.
 
 We don't ask for your resume but that doesn't mean we're not interested in what you've worked on in the past, we're just leaving it up to you to tell your own story the way you want to tell it.
 

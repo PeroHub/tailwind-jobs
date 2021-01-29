@@ -105,24 +105,26 @@ export default function JobPosting({ jobs }) {
         <main className="max-w-6xl mx-auto px-6">
           <div className="py-8 space-y-8">
             <h1 className="text-3xl leading-9 font-bold text-gray-900">Job Postings</h1>
-            <div className="space-y-4">
-              <h2 className="text-lg leading-6 font-semibold text-gray-900">Open</h2>
-              <div>
-                <ul className="space-y-4">
-                  {openJobs.map((job) => {
-                    return (
-                      <li key={job.path}>
-                        <Link href="/[job]" as={`/${job.path}`}>
-                          <a>
-                            <JobCard job={job} />
-                          </a>
-                        </Link>
-                      </li>
-                    )
-                  })}
-                </ul>
+            {openJobs.length > 0 && (
+              <div className="space-y-4">
+                <h2 className="text-lg leading-6 font-semibold text-gray-900">Open</h2>
+                <div>
+                  <ul className="space-y-4">
+                    {openJobs.map((job) => {
+                      return (
+                        <li key={job.path}>
+                          <Link href="/[job]" as={`/${job.path}`}>
+                            <a>
+                              <JobCard job={job} />
+                            </a>
+                          </Link>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </div>
               </div>
-            </div>
+            )}
             <div className="space-y-4">
               <h2 className="text-lg leading-6 font-semibold text-gray-900">Closed</h2>
               <div>

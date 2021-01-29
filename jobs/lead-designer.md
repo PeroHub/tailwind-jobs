@@ -5,7 +5,7 @@ jobType: 'Full-time'
 location: ['Remote']
 salary: ['$125,000 – $175,000 USD', '$160,000 – $220,000 CAD']
 closes: '2021-01-28T21:00:00.0'
-status: open
+status: closed
 applyUrl: 'https://apply.workable.com/tailwind-labs/j/AAA5F15C45/apply/'
 ---
 
